@@ -1,1 +1,1 @@
-an attempt to create a DnD character sheep app
+An attempt to create a DnD character sheet app
