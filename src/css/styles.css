@@ -1,0 +1,323 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+@import url(https://fonts.googleapis.com/css?family=Gudea:400,700);
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 760px) {
+  .auth header {
+    width: 100%;
+    height: 13.8vh;
+    background: #242734;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .auth header h1 {
+    color: #a09e9e;
+    font-family: "Gudea", sans-serif;
+    font-size: 30px;
+    margin-left: 2%;
+  }
+  .auth .login {
+    -webkit-perspective: 800px;
+            perspective: 800px;
+    height: 86.2vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Gudea", sans-serif;
+    background: #a09e9e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .auth .login .authBox {
+    height: 300px;
+    width: 240px;
+    background: #242734;
+    padding: 100px 40px 40px 40px;
+    margin-top: 10%;
+    -webkit-box-shadow: 3px 3px 15px  black;
+            box-shadow: 3px 3px 15px  black;
+  }
+  .auth .login .authBox .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .auth .login .authBox .tabButtonA {
+    color: #a09e9e;
+    height: 60px;
+    text-align: left;
+    font-size: 16px;
+    margin-right: 25px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .auth .login .authBox .tabButtonI {
+    color: #554f4f;
+    height: 60px;
+    text-align: left;
+    font-size: 16px;
+    margin-right: 25px;
+    cursor: pointer;
+  }
+  .auth .login .authBox .inputs {
+    height: 20px;
+    width: 100%;
+    background: #242734;
+    border-top: none;
+    border-bottom: 1px solid #a09e9e;
+    border-right: none;
+    border-left: none;
+    margin-bottom: 2rem;
+  }
+  .auth .login .authBox .inputNo {
+    display: none;
+  }
+  .auth .login .authBox input:focus {
+    outline: none;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: -webkit-transform .15s ease;
+    transition: -webkit-transform .15s ease;
+    transition: transform .15s ease;
+    transition: transform .15s ease, -webkit-transform .15s ease;
+  }
+  .auth .login .authBox input::-webkit-input-placeholder {
+    color: #706670;
+  }
+  .auth .login .authBox input:-ms-input-placeholder {
+    color: #706670;
+  }
+  .auth .login .authBox input::-ms-input-placeholder {
+    color: #706670;
+  }
+  .auth .login .authBox input::placeholder {
+    color: #706670;
+  }
+  .auth .login .authBox button {
+    margin-top: 2rem;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background: none;
+    border: 2px solid #a09e9e;
+    color: #a09e9e;
+    outline: 1px dashed transparent;
+  }
+  .auth .login .authBox button:active {
+    border: 3px solid #f0eded;
+  }
+  header {
+    width: 100%;
+    height: 13.8vh;
+    background: #242734;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 2%;
+  }
+  header h1 {
+    color: #a09e9e;
+    font-family: "Gudea", sans-serif;
+    font-size: 30px;
+  }
+  header h3 {
+    color: #a09e9e;
+    font-family: "Gudea", sans-serif;
+    font-size: 20px;
+    margin-left: 90%;
+  }
+  header .account {
+    margin-right: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  header button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: 1px dashed transparent;
+  }
+  header .caret {
+    height: 20px;
+  }
+  header h2 {
+    font-family: "Gudea", sans-serif;
+    font-size: 20px;
+    color: #a09e9e;
+  }
+  .home .card-container {
+    min-height: 86.2vh;
+    background: #a09e9e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .card-container .search {
+    height: 20px;
+  }
+  .home .card-container .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .home .card-container .cards .card {
+    height: 100px;
+    width: 140px;
+    background: #242734;
+    padding: 100px 40px 40px 40px;
+    margin-top: 10%;
+    -webkit-box-shadow: 3px 3px 15px  black;
+            box-shadow: 3px 3px 15px  black;
+    margin: 20px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

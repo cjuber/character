@@ -1,0 +1,191 @@
+// Auth -----------------------------------------------------------------------------------------------------------------------------------------------
+.auth{
+    
+    
+    header{
+        width: 100%;
+        height: 13.8vh;
+        background: $color2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            color: $color;
+            font-family: $font;
+            font-size: 30px;
+            margin-left: 2%;
+        }
+    }
+.login{
+    
+    
+    
+   
+    perspective:800px;
+    height: 86.2vh;
+    margin:0;
+    overflow: hidden;
+    font-family: $font;
+    background: $color;
+    display: flex;
+    justify-content: center;
+    
+    
+    .authBox{
+        height: 300px;
+        width: 240px;
+        background: $color2;
+        padding:100px 40px 40px 40px;
+        margin-top: 10%;
+        box-shadow: 3px 3px 15px  black;
+        .tabs{
+            display: flex;
+        }
+        .tabButtonA{
+            color: $color;
+            height:60px;
+            text-align:left;
+            font-size:16px;
+            margin-right: 25px;
+            transition: all 0.5s ease;
+            
+        }
+        .tabButtonI{
+            color: $color3;
+            height:60px;
+            text-align:left;
+            font-size:16px;
+            margin-right: 25px;
+            cursor: pointer;
+            
+        }
+        .inputs{
+            height: 20px;
+            width: 100%;
+            
+            background: $color2;
+            border-top: none;
+            border-bottom: 1px solid $color;
+            border-right: none;
+            border-left: none;
+            margin-bottom: 2rem;
+            
+        }
+        .inputNo{
+            display: none;
+        }
+        input:focus {
+            outline: none;
+            transform: scale(1.1);
+            transition: transform .15s ease;
+        }
+       
+        input::placeholder{
+            color: rgb(112, 102, 112);
+        }
+        button{
+            margin-top: 2rem;
+            width: 150px;
+            height: 40px;
+            border-radius: 50px;
+            background: none;
+            border: 2px solid $color;
+            color: $color;
+            outline: 1px dashed transparent;
+        }
+        button:active{
+            border: 3px solid $color * 1.5;
+        }
+    }
+    
+    
+}
+}
+// End Auth -------------------------------------------------------------------------------------------------------------------------------------------
+
+// Header ---------------------------------------------------------------------------------------------------------------------------------------------
+header{
+    width: 100%;
+    height: 13.8vh;
+    background: $color2;
+    display: flex;
+    justify-content: space-between;
+    
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2%;
+    }
+    
+    h1{
+        color: $color;
+        font-family: $font;
+        font-size: 30px;
+        
+    }
+    h3{
+        color: $color;
+        font-family: $font;
+        font-size: 20px;
+        margin-left: 90%;
+    }
+    .account{
+        margin-right: 2%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+    }
+    button{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        
+        cursor: pointer;
+        outline: 1px dashed transparent;
+    }
+    .caret{
+        
+        height: 20px;
+        
+    }
+    h2{
+        font-family: $font;
+        font-size: 20px;
+        color: $color;
+    }
+}
+// End Header -----------------------------------------------------------------------------------------------------------------------------------------
+
+// Home -----------------------------------------------------------------------------------------------------------------------------------------------
+.home{
+    
+    .card-container{
+        min-height: 86.2vh;
+        
+        background: $color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .search{
+            height: 20px;
+        }
+        .cards{
+            display: flex;
+            justify-content: space-evenly;
+            flex-flow: row wrap;
+            .card{
+                height: 100px;
+                width: 140px;
+                background: $color2;
+                padding:100px 40px 40px 40px;
+                margin-top: 10%;
+                box-shadow: 3px 3px 15px  black;
+                margin: 20px;
+            }
+        }
+    }
+}
+
+// End Home -------------------------------------------------------------------------------------------------------------------------------------------
