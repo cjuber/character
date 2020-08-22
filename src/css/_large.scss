@@ -161,7 +161,7 @@ header{
 // Home -----------------------------------------------------------------------------------------------------------------------------------------------
 .home{
     
-    .card-container{
+    .container{
         min-height: 86.2vh;
         
         background: $color;
@@ -170,19 +170,120 @@ header{
         align-items: center;
         .search{
             height: 20px;
+            input{
+                height: 25px;
+            width: 250px;
+           
+            background: $color2;
+            border-top: .5px solid $color;
+            border-bottom: 1px solid $color;
+            border-right: none;
+            border-left: none;
+            margin-bottom: 10px;
+            }
+            input:focus {
+                outline: none;
+                transform: scale(1.1);
+                transition: transform .15s ease;
+            }
+           
+            input::placeholder{
+                color: rgb(112, 102, 112);
+            }
         }
         .cards{
             display: flex;
             justify-content: space-evenly;
             flex-flow: row wrap;
+            margin-top: 20px;
             .card{
-                height: 100px;
-                width: 140px;
-                background: $color2;
-                padding:100px 40px 40px 40px;
-                margin-top: 10%;
-                box-shadow: 3px 3px 15px  black;
                 margin: 20px;
+                height: 360px;
+                width: 220px;
+                background: $color2;
+                border-radius: 50px;
+                box-shadow: 3px 3px 15px  black;
+                cursor: pointer;
+            }
+            .title {
+                height: 60px;
+                width: 220px;
+                background: $color4;
+                // opacity: 0.7;
+                
+                border-radius: 50px 50px 0 0;  
+                display: flex;
+                flex-direction: column;
+                align-items: center;  
+                color: $color2;  
+                
+            }
+            .titleName{
+                font-family: $font;
+                font-size: 20px;
+                margin-top: 2%;
+                h2{
+                    width: 160px;
+                    text-align: center;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: initial;
+                }     
+            }
+            .race{
+                margin: 10px;
+                font-family: $font;
+                font-size: 20px;
+                h2{
+                    width: 160px;
+                    text-align: center;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: initial;
+                }     
+                
+            }
+            
+            .bg{
+                width: 220px;
+                height: 270px;
+                background: $color2;
+            }
+            .info{
+                height: 30px;
+                width: 217px;
+                margin-left: 1px;
+                background: $color4;
+                // opacity: 0.7;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-radius: 0 0 50px 50px ;  
+                
+                color: $color2;  
+                .class-level{
+                    font-family: $font;
+                    font-size: 16px;
+                    
+                    display: flex;
+                    justify-content: center;
+                    h2{
+                        width:100px;
+                        margin-right: 20px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    h3{
+                        width: 60px;
+                    }
+                    
+                }
+                
+            }
+            .card:active{
+                transform: translate(3px,3px);
+                transition: transform .15s ease;
             }
         }
     }

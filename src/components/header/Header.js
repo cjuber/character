@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import caretImg from '../../assets/caret.png'
+
 export default class Header extends Component {
     render() {
        

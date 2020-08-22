@@ -280,7 +280,7 @@ input, select {
     font-size: 20px;
     color: #a09e9e;
   }
-  .home .card-container {
+  .home .container {
     min-height: 86.2vh;
     background: #a09e9e;
     display: -webkit-box;
@@ -294,10 +294,41 @@ input, select {
         -ms-flex-align: center;
             align-items: center;
   }
-  .home .card-container .search {
+  .home .container .search {
     height: 20px;
   }
-  .home .card-container .cards {
+  .home .container .search input {
+    height: 25px;
+    width: 250px;
+    background: #242734;
+    border-top: 0.5px solid #a09e9e;
+    border-bottom: 1px solid #a09e9e;
+    border-right: none;
+    border-left: none;
+    margin-bottom: 10px;
+  }
+  .home .container .search input:focus {
+    outline: none;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: -webkit-transform .15s ease;
+    transition: -webkit-transform .15s ease;
+    transition: transform .15s ease;
+    transition: transform .15s ease, -webkit-transform .15s ease;
+  }
+  .home .container .search input::-webkit-input-placeholder {
+    color: #706670;
+  }
+  .home .container .search input:-ms-input-placeholder {
+    color: #706670;
+  }
+  .home .container .search input::-ms-input-placeholder {
+    color: #706670;
+  }
+  .home .container .search input::placeholder {
+    color: #706670;
+  }
+  .home .container .cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -308,16 +339,109 @@ input, select {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+    margin-top: 20px;
   }
-  .home .card-container .cards .card {
-    height: 100px;
-    width: 140px;
+  .home .container .cards .card {
+    margin: 20px;
+    height: 360px;
+    width: 220px;
     background: #242734;
-    padding: 100px 40px 40px 40px;
-    margin-top: 10%;
+    border-radius: 50px;
     -webkit-box-shadow: 3px 3px 15px  black;
             box-shadow: 3px 3px 15px  black;
-    margin: 20px;
+    cursor: pointer;
+  }
+  .home .container .cards .title {
+    height: 60px;
+    width: 220px;
+    background: #d0d4db;
+    border-radius: 50px 50px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #242734;
+  }
+  .home .container .cards .titleName {
+    font-family: "Gudea", sans-serif;
+    font-size: 20px;
+    margin-top: 2%;
+  }
+  .home .container .cards .titleName h2 {
+    width: 160px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: initial;
+  }
+  .home .container .cards .race {
+    margin: 10px;
+    font-family: "Gudea", sans-serif;
+    font-size: 20px;
+  }
+  .home .container .cards .race h2 {
+    width: 160px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: initial;
+  }
+  .home .container .cards .bg {
+    width: 220px;
+    height: 270px;
+    background: #242734;
+  }
+  .home .container .cards .info {
+    height: 30px;
+    width: 217px;
+    margin-left: 1px;
+    background: #d0d4db;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 0 0 50px 50px;
+    color: #242734;
+  }
+  .home .container .cards .info .class-level {
+    font-family: "Gudea", sans-serif;
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home .container .cards .info .class-level h2 {
+    width: 100px;
+    margin-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .home .container .cards .info .class-level h3 {
+    width: 60px;
+  }
+  .home .container .cards .card:active {
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
+    -webkit-transition: -webkit-transform .15s ease;
+    transition: -webkit-transform .15s ease;
+    transition: transform .15s ease;
+    transition: transform .15s ease, -webkit-transform .15s ease;
   }
 }
 /*# sourceMappingURL=styles.css.map */
